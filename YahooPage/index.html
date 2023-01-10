@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Yahoo!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="bg">
+    <header>
+        <div class="header">
+            <h1>yahoo<i>!</i></h1>
+            <a href="https://help.yahoo.com/kb/account" class="helpFont">Help</a>
+        </Div>
+    </header>
+    <div class="form-style">
+        <h1 class="siteName">yahoo<i>!</i></h1>
+        <h2 class="secondHeader">Create a yahoo account</h2>
+        <form name="first">
+            <div>
+                <input type="text" name='FullName' class="search" value="" placeholder="Full name">
+                <label for="email" class="leftAlign">New Yahoo email</label>
+                <input type="text" name="email" class="search" value="" placeholder="@yahoo.com">
+                <!-- <button type="button" onclick="myFunction(document.first.email)">Test</button> -->
+                <input type="password" name='password' class="search" value="" placeholder="Create password">
+                <input type="number" name='BirthYear' class="search" value="" placeholder="Birth year">
+            </div>
+            <p>By clicking "Continue", you agree to the <a
+                    href="https://legal.yahoo.com/us/en/yahoo/terms/otos/index.html">Terms</a> and acknowledge the <a
+                    href="https://legal.yahoo.com/us/en/yahoo/privacy/index.html">Privacy Policy</a></p>
+            <button type="button" class="btn btn-primary"
+                onclick="myFunction(document.first.FullName,document.first.email, document.first.password, document.first.BirthYear)">Continue</button>
+            <!-- <input type="button" value="Continue" class="button"> -->
+            <p><strong>Already have an account?</strong> <a href="#">Sign in</a> </p>
+        </form>
+        <p id="demo1"></p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="./fun.js"></script>
+</body>
+
+</html>

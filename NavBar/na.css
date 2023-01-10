@@ -1,0 +1,75 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background-color: #333;
+}
+
+.con {
+    background: #e4e4e4 url(./jonatan-pie-3l3RwQdHRHg-unsplash.jpg) center bottom;
+    min-height: 100vh;
+}
+
+.navbar a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.search-container {
+    position: relative;
+}
+
+.search-bar {
+    width: 300px;
+    height: 34px;
+    padding: 6px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.search-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 34px;
+    margin: 6px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .navbar li {
+        margin: 10px 0;
+    }
+
+    .search-container {
+        width: 100%;
+    }
+}
