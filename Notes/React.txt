@@ -1,0 +1,85 @@
+Notes on React.js
+
+React:
+	- Components Structure.
+	- Faster and secure development.
+	- updating DOM is faster.
+        	- Reconsilation algorithm.
+	- Single Page Application
+        	- Routing Mechanism.
+	- React uses virtual DOM.
+	- React elements are immutable.
+
+
+JSX - combination of JavaScript and XML.
+
+Components:
+	- Functional components.
+	- Class components.
+	- Higher order components.(used for writing reusable logic)
+	- components are like JavaScript functions. They accept arbitrary inputs (called “props”) and return React elements describing what should appear on the screen.
+
+Props:
+	- react uses props(properties) to perform actions including user interaction.
+	- For Functional components, props are passed explicitily.
+	- For Class components, props are available by default.
+	- Props are passed from parent component to child component.
+	- props are read only. Child cannot update the prop without parent.
+	- All React components must act like pure functions with respect to their props.
+
+
+Destructuring:
+	-We may have an array or object that we are working with, but we only need some of the items contained in these.
+	-Destructuring makes it easy to extract only what is needed.
+
+State:
+	-State allows React components to change their output over time in response to user actions, network responses, and anything else, without violating any rule.
+	- creation:
+		- Redux(Redux Thunk and Redux Saga) or context API.
+	- prevents Props drilling.
+
+For class component:
+	-to load, update and remove the components after working class component uses mounting, unmounting, updating stages.
+
+Component lifecycle methods(Only for class components)
+-Functional components have different set of lifecycle methods called Hooks.
+
+Hooks:
+	-Hooks allow you to reuse stateful logic without changing your component hierarchy.
+	-Hooks let you use more of React’s features without classes.
+
+lifecycle methods:
+
+-Mounting:
+	These methods are called in the following order when an instance of a component is being created and inserted into the DOM:
+
+	-constructor()
+	-static getDerivedStateFromProps()
+	-render()
+	-componentDidMount()
+
+-Updating:
+	An update can be caused by changes to props or state. These methods are called in the following order when a component is being re-rendered:
+
+	-static getDerivedStateFromProps()
+	-shouldComponentUpdate()
+	-render()
+	-getSnapshotBeforeUpdate()
+	-componentDidUpdate()
+
+-Unmounting
+	This method is called when a component is being removed from the DOM:
+
+	-componentWillUnmount()
+
+
+Error handling:
+	These methods are called when there is an error during rendering, in a lifecycle method, or in the constructor of any child component.
+
+	-static getDerivedStateFromError()
+	-componentDidCatch()
+
+Render:
+	The render() method is the only required method in a class component.
+
+
